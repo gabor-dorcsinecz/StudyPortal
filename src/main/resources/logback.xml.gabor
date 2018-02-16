@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+  <contextName>tbilling</contextName>
+	
+  <jmxConfigurator contextName="tbilling" />
+
+  <appender name="STUDYPORTAL" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>log/tbilling.log</file>
+    <append>true</append>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <fileNamePattern>log/history/tbilling/tbilling-%d{yyyy-MM-dd-HH}.log</fileNamePattern>
+      <maxHistory>504</maxHistory> 
+    </rollingPolicy>
+    <encoder>
+      <pattern>%date %-5level %-20.20logger %X{call} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  
+  <logger name="org.eclipse.jetty">
+    <level value="WARN"/>
+  </logger>
+  <logger name="org.apache">
+    <level value="WARN"/>
+  </logger>
+  <logger name="net.liftweb.db">
+    <level value="WARN"/>
+  </logger>
+  <logger name="net.liftweb.mapper">
+    <level value="WARN"/>
+  </logger>
+  <logger name="org.quartz">
+    <level value="WARN"/>
+  </logger>
+
+  <root >
+    <level value="TRACE" />
+    <appender-ref ref="STUDYPORTAL" />
+  </root>  
+
+</configuration>

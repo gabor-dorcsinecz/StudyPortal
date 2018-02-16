@@ -1,0 +1,76 @@
+@media only screen and (min-width : 768px) {
+    /* Make Navigation Toggle on Desktop Hover so we do not have to click on it to show the submenus*/
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
+
+.paglow {
+  margin: 0px; 
+}
+
+  
+.tlist {list-style-type: none;margin: 0px; padding: 0px;}
+
+.formtable tbody > tr > td {border-top:none;}
+
+
+.top-nav-strip{
+	height:22px;
+	padding-bottom:4px;
+	border-bottom:1px solid #f0f0f0
+}
+
+.top-site-nav{
+	float:right
+}
+
+.top-site-nav>ul>li{
+	float:left;
+	padding:0.1em 0.8em;
+	color:#595959;
+	border-left:1px solid #e9e9e9;
+	line-height:.5rem;
+	list-style-type:none;
+}
+
+.top-site-nav>ul>li:first-child{
+	border-left:none
+}
+
+.top-site-nav .top-nav-contact{
+	font-weight:600;
+	overflow:hidden
+}
+
+.top-site-nav .top-nav-contact .icon-contact{
+	margin-right:5px;
+	margin-left:-19px;
+	margin-top:-2px
+}
+
+.top-site-nav .nav-link{
+	font-size:12px;
+	color:inherit;
+	line-height:1rem
+}
+
+.top-site-nav .nav-link:hover,.top-site-nav .nav-link.active{
+	color:#16a085
+}
+
+.fd-header .top-nav-strip{
+	padding-top:5px;
+}
+
+.spacetop5 { margin-top:5px; }
+.spacetop10 { margin-top:10px; }
+.spacetop15 { margin-top:15px; }
+.spacetop20 { margin-top:20px; }
+.spacetop30 { margin-top:30px; } 
+
+.spacebottom5 { margin-bottom:5px; }
+.spacebottom10 { margin-bottom:10px; }
+.spacebottom15 { margin-bottom:15px; }
+.spacebottom20 { margin-bottom:20px; }
+.spacebottom30 { margin-bottom:30px; } 

@@ -1,0 +1,1 @@
+This is a code highlighter, that can work during editing, and can be applied to a textarea

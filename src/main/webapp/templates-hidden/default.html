@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!--<title data-lift="PageTitle.render"></title>-->
+
+  <link href="/assets/frontpage/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/frontpage/animate.css" rel="stylesheet">
+  <link href="/assets/frontpage/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/bootstrap/bootstrap-datepicker.min.css"/>
+  <link rel="shortcut icon" href="/assets/images/favicon.ico"/>
+
+  <script src="/assets/frontpage/jquery-2.1.1.js"></script>
+  <script src="/assets/frontpage/bootstrap.min.js"></script>
+  <script src="/assets/bootstrap/bootstrap-datepicker.min.js"></script>
+
+</head>
+<body id="page-top" class="landing-page no-skin-config">
+
+<div class="container">
+
+  <div class="fd-header">
+    <!--<span style="color: red;padding-left: 0px"><span data-lift="lift:Msgs?showAll=true"></span></span>-->
+    <div class="top-nav-strip">
+    </div>
+  </div>
+
+  <div id="menu">
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+
+        <div class="navbar-header">  <!--Colapsed menu for mobile devices-->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><lift:Menu.item name="mLogin"/></li>
+            <li><lift:Menu.item name="mCreateUser"/></li>
+          </ul>
+          <div data-lift="Bs3Navbar.builder?group=Left"></div>   <!-- Menu aligned to the left with LocGroup-->
+          <span data-lift="Bs3Navbar.builderPullRight?group=Right"></span>  <!-- Menu aligned to the left with LocGroup-->
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+
+  <div id="content"></div>
+</div>
+
+
+</body>
+</html>
